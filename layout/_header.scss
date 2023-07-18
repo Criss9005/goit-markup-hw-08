@@ -1,0 +1,91 @@
+header{
+    background-color: $text-color-secundary;
+}
+.header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    &__logo{
+      font-family: $secundary-font;
+      font-weight: 700;
+      font-size: $fs26;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: $brand-color;
+    }
+      
+}
+
+.nav{
+    display:flex;
+    margin: 0;
+    padding: 0;
+
+    &__link{
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: $fs14;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: $dominat-color;
+        display:block;
+        padding-top:24px;
+        padding-bottom: 25px;
+        margin-right: 50px;
+        &:hover{
+            color:$brand-color;
+        }
+        &:focus{
+            color:$brand-color;
+        }
+    }
+
+    &__contact{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        &--mail-ubication{
+            margin-left: 240px;
+            margin-right: 10px;
+            fill: $text-color-primary;
+            &:hover{
+                stroke: $brand-color;
+            }
+            &:focus{
+                stroke: $brand-color;
+            }
+        }
+    
+        &--phone-ubication{
+            margin-left: 30px;
+            margin-right: 10px;
+            fill: $text-color-primary;
+            &:hover{
+                stroke: $brand-color;
+            }
+            &:focus{
+                stroke: $brand-color;
+            }
+        }
+    
+        &--text{
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: $fs14;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: $text-color-primary;
+            padding: 32px 0 32px 0;
+            &:hover{
+                color:$brand-color;
+            }
+            &:focus{
+                color:$brand-color;
+            }
+        }
+    } 
+}
+

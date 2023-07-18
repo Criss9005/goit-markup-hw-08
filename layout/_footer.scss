@@ -1,0 +1,83 @@
+.footer__contact-text{
+    font-family: $main-font;
+    font-size: $fs14;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $button-background-color;
+    &:hover{
+        color:$brand-color;
+    }
+    &:focus{
+        color:$brand-color;
+    }
+}
+
+.footer{
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+
+    &__contact{
+        padding-left: 0px;
+        margin: 0px;
+    }
+
+    &__icons{
+        display: flex;
+        padding-top: 20px;
+        gap:10px;
+
+        &--color{
+            fill: $color-white;
+            border-radius: 50%;
+            background-color:$icon-footer-color;
+
+            &:hover{
+                background-color: $brand-color; 
+            }
+            &:focus{
+                background-color: $brand-color; 
+            }
+        }
+    }
+
+    &__smcontainer{
+        width: 826px;
+        height: 86px;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 40px;
+        align-items: baseline;
+    }
+}
+
+.footer-find-us{
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: $fs14;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:$text-color-secundary;
+    padding-top:12px;
+}
+
+.footer-background{
+    background-color: $background-index ;
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+
+.footer-text{
+    font-family: $main-font;
+    font-size: $fs14;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-color-secundary;
+    margin: 14px 0 0;
+}

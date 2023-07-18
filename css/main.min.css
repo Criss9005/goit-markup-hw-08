@@ -1,0 +1,1074 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+  tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+header {
+  background-color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
+
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.nav__link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 50px;
+}
+.nav__link:hover {
+  color: #2196F3;
+}
+.nav__link:focus {
+  color: #2196F3;
+}
+.nav__contact {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.nav__contact--mail-ubication {
+  margin-left: 240px;
+  margin-right: 10px;
+  fill: #757575;
+}
+.nav__contact--mail-ubication:hover {
+  stroke: #2196F3;
+}
+.nav__contact--mail-ubication:focus {
+  stroke: #2196F3;
+}
+.nav__contact--phone-ubication {
+  margin-left: 30px;
+  margin-right: 10px;
+  fill: #757575;
+}
+.nav__contact--phone-ubication:hover {
+  stroke: #2196F3;
+}
+.nav__contact--phone-ubication:focus {
+  stroke: #2196F3;
+}
+.nav__contact--text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  padding: 32px 0 32px 0;
+}
+.nav__contact--text:hover {
+  color: #2196F3;
+}
+.nav__contact--text:focus {
+  color: #2196F3;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section-service {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.section-service__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  text-align: center;
+}
+.section-service__btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background-color: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  margin-top: 30px;
+}
+.section-service__btn:hover {
+  background-color: #1367ac;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-service__btn:focus {
+  background-color: #1367ac;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__contact-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__contact-text:hover {
+  color: #2196F3;
+}
+.footer__contact-text:focus {
+  color: #2196F3;
+}
+
+.footer {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+.footer__contact {
+  padding-left: 0px;
+  margin: 0px;
+}
+.footer__icons {
+  display: flex;
+  padding-top: 20px;
+  gap: 10px;
+}
+.footer__icons--color {
+  fill: rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer__icons--color:hover {
+  background-color: #2196F3;
+}
+.footer__icons--color:focus {
+  background-color: #2196F3;
+}
+.footer__smcontainer {
+  width: 826px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  align-items: baseline;
+}
+
+.footer-find-us {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 12px;
+}
+
+.footer-background {
+  background-color: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin: 14px 0 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+.margin-text {
+  margin-right: 50px;
+}
+
+.space {
+  margin-right: 60px;
+}
+
+.background-gray {
+  background-color: #E5E5E5;
+}
+
+.section-padding {
+  padding-top: 94px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.caracteristics {
+  display: flex;
+  margin: 10px;
+  height: auto;
+  text-align: left;
+  padding-left: 0%;
+  gap: 30px;
+}
+.caracteristics__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100% - 90px) / 4);
+}
+.caracteristics__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.caracteristics__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.caracteristics__icon {
+  background: #F5F4FA;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
+
+.dedicate-section-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+
+.img-container {
+  display: flex;
+  gap: 23px;
+  padding: 0;
+}
+
+.team {
+  display: flex;
+  text-align: center;
+  padding: 0px;
+  gap: 30px;
+  margin: 0px;
+}
+.team__information {
+  padding: 30px 44px;
+}
+.team__item {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.15), 0px 2px 1px rgba(33, 33, 33, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin: 0 0 10px 0;
+}
+.team__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+.cards__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cards__item {
+  border: 1px solid #EEEEEE;
+  flex-basis: calc((100% - 54px) / 3);
+}
+.cards__item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.15);
+}
+.cards__item:hover .cards__overlay {
+  transform: translateY(0);
+}
+.cards__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.15);
+}
+.cards__information {
+  padding-top: 20px;
+  color: #212121;
+}
+.cards__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  margin: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.cards__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.5;
+  margin: 0;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+.cards__img {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+}
+
+.overlay-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding: 63px 24px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-left: 0;
+}
+.buttons__item {
+  margin: 4px;
+  border: 0;
+  padding: 6px 24px;
+}
+
+.here-port {
+  color: #2196F3;
+}
+.here-port::after {
+  content: "";
+  width: 68px;
+  height: 4px;
+  background-color: #2196F3;
+  display: block;
+  position: absolute;
+  top: 76px;
+  border-radius: 2px;
+}
+
+.here-index {
+  color: #2196F3;
+}
+.here-index::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: #2196F3;
+  display: block;
+  position: absolute;
+  top: 76px;
+  border-radius: 2px;
+}
+
+.menu-marg-padd {
+  margin: 0 93px 0 0;
+  padding: 24px 0 25px 0;
+}
+
+.focus {
+  background: #E5E5E5;
+}
+.focus:hover {
+  color: #FFFFFF;
+  background-color: #2196F3;
+}
+.focus:focus {
+  color: #FFFFFF;
+  background-color: #2196F3;
+}
+
+.team-section-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.team__social-media {
+  display: flex;
+  padding-top: 16px;
+}
+.team__social-media--icon {
+  fill: #AFB1B8;
+}
+.team__social-media--icon:hover {
+  fill: #FFFFFF;
+  border-radius: 50%;
+  background-color: #2196F3;
+}
+
+.regular-clients {
+  display: flex;
+  justify-content: space-between;
+}
+.regular-clients__icons {
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  width: 170px;
+  height: 81px;
+}
+.regular-clients__icons:hover {
+  border: 1px solid #2196F3;
+  fill: #2196F3;
+}
+.regular-clients__icons--color {
+  fill: #AFB1B8;
+}
+.regular-clients__icons--color:hover {
+  fill: #2196F3;
+  stroke: #2196F3;
+}
+.regular-clients__icons--color:focus {
+  fill: #2196F3;
+  stroke: #2196F3;
+}
+
+.background-black {
+  background-color: #2F303A;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../images/Imagen-fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-container__design, .img-container__movil, .img-container__desk {
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.img-container__desk {
+  background-image: url(../images/imagen.jpg);
+}
+
+.img-container__movil {
+  background-image: url(../images/imagen2.jpg);
+}
+
+.img-container__design {
+  background-image: url(../images/imagen3.jpg);
+}
+
+.upper-text {
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-top: 254px;
+}
+
+.border-header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header__contact:hover .header__contact--mail-ubication, .header__contact:hover .header__contact--phone-ubication, .header__contact:focus .header__contact--phone-ubication, .header__contact:focus .header__contact--mail-ubication {
+  stroke: #2196F3;
+}
+
+.header__contact:hover .header__contact--text, .header__contact:focus .header__contact--text {
+  color: #2196F3;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.modal__box {
+  width: 528px;
+  height: 581px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.svg-close {
+  border: 1px solid #AFB1B8;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.svg-close:hover {
+  fill: #2196F3;
+  cursor: pointer;
+}
+
+.form-space {
+  width: 570px;
+  height: auto;
+}
+
+.input-size {
+  width: 358px;
+  height: 50px;
+  padding: 10px;
+}
+
+.form-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form__btn {
+  height: 50px;
+  width: 200px;
+  background-color: #2196F3;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.form-btn:hover {
+  cursor: pointer;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup-form__head {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: rgb(33, 33, 33);
+  margin-bottom: 12px;
+}
+.signup-form__input {
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  display: block;
+  padding-left: 42px;
+}
+.signup-form__input:focus + .signup-form__svg {
+  fill: #2196F3;
+}
+.signup-form__input:hover + .signup-form__svg {
+  fill: #2196F3;
+}
+.signup-form__input:focus {
+  border: 1px solid #2196F3;
+  outline: none;
+}
+.signup-form__input:hover {
+  border: 1px solid #2196F3;
+  outline: none;
+}
+.signup-form__textarea {
+  width: 448px;
+  height: 120px;
+  padding: 16px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  display: block;
+}
+.signup-form__checkbox-btn {
+  background-color: #2196F3;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.signup-form__checkbox-btn:hover {
+  cursor: pointer;
+}
+.signup-form__svg {
+  position: absolute;
+  top: 38px;
+  left: 12px;
+  fill: #212121;
+}
+.signup-form__checkbox {
+  padding-left: 76px;
+  padding-right: 51px;
+  margin-top: 10px;
+  padding-top: 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.self-pos {
+  align-self: flex-end;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+textarea:hover {
+  cursor: pointer;
+  border: 1px solid #2196F3;
+  outline: none;
+}
+
+textarea:focus {
+  border: 1px solid #2196F3;
+  outline: none;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgb(117, 117, 117);
+  padding-top: 10px;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.send-text-style {
+  color: #757575;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  padding-left: 77px;
+  padding-right: 51px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.signup-form__checkbox-input:checked + .signup-form__checkbox-label::before {
+  background-image: url(../images/check-icon.jpg);
+  border-color: #2196F3;
+}
+
+.signup-form__checkbox-label {
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+.signup-form__checkbox-label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  cursor: pointer;
+  position: absolute;
+  left: -20px;
+  top: 10px;
+}
+
+/*# sourceMappingURL=main.min.css.map */
