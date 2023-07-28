@@ -1,0 +1,146 @@
+@media (max-width: 767px) {
+    .nav {
+      display: none;
+    }
+}
+@media (max-width: 767px) {
+    .nav-contacts {
+      display: none;
+    }
+}
+
+  
+.menu-toggle {
+    min-height: 20px;
+    min-width: 20px;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+  
+ @media (min-width: 768px) {
+    .menu-toggle {
+     display: none;
+    }
+}
+  
+  
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    z-index: 999;
+    background-color:$color-white;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+  
+.menu-container.is-open {
+    transform: translateX(0);
+}
+  
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: $dominat-color;
+    
+}
+  
+.mobile-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-contacts{
+  display: flex;
+  flex-direction: column;
+  margin-top: 302px;
+  gap: 32px;
+  padding-left: 8px;
+
+}
+
+.link-menu {
+  font-family: $main-font;
+  font-size: $fs40;
+  font-weight: 500;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $menu-color;
+}
+
+.link-phone{
+  font-family: $main-font;
+  font-size: $fs34;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $text-color-primary;
+}
+.link-mail{
+  font-family: $main-font;
+  font-size: $fs24;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color:$text-color-primary ;  
+}
+
+.link-social{
+  font-family: $main-font;
+  font-size: $fs18;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $brand-color;
+
+}
+
+.mobile-social{
+    display: flex;
+    gap: 10px;
+    margin-top:64px ;
+    padding-left: 8px;
+}
+
+ 
+.svg-menu-close {
+    margin-top: 10px;
+    margin-right: 15px;
+    position: relative;
+    left: 80%;
+}
+.svg-menu-close:hover{
+    fill: $brand-color;
+    cursor: pointer;
+}
+
+.hamburger-menu:hover, .link-phone:hover, .link-mail:hover, .link-menu:hover{
+  color: $brand-color;
+}
+
+.hamburger-menu{
+    position: absolute;
+    left: 90%;
+}
+
+.padd-adjust{
+padding-left: 8px;
+}
+
+.division{
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+

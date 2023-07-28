@@ -14,12 +14,10 @@
 
 .footer{
     display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
+    flex-direction: column;
+    align-items: center;
 
+     
     &__contact{
         padding-left: 0px;
         margin: 0px;
@@ -28,6 +26,7 @@
     &__icons{
         display: flex;
         padding-top: 20px;
+        margin-bottom: 60px;
         gap:10px;
 
         &--color{
@@ -45,14 +44,34 @@
     }
 
     &__smcontainer{
-        width: 826px;
-        height: 86px;
+        
         display: flex;
         align-items: center;
+        flex-direction: column;
         list-style: none;
-        gap: 40px;
-        align-items: baseline;
+        margin-top: 57px ;
+        
+        @media screen and (min-width: 768px) { 
+            margin-top: 0px;
+                       
+        }
     }
+
+    @media screen and (min-width: 768px) { 
+        flex-direction: row;
+        gap: 165px;
+        justify-content: center;
+        margin-bottom: 54px;
+    }
+
+    @media screen and (min-width: 1200px) { 
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+
 }
 
 .footer-find-us{
@@ -64,12 +83,24 @@
     text-transform: uppercase;
     color:$text-color-secundary;
     padding-top:12px;
+    text-align: center;
+    @media screen and (min-width: 1200px) { 
+        text-align: left;
+    }
+
 }
 
 .footer-background{
     background-color: $background-index ;
     padding-top:60px;
     padding-bottom:60px;
+
+    @media screen and (min-width: 1200px) { 
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: space-evenly;
+    }
 }
 
 
@@ -79,5 +110,80 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $text-color-secundary;
-    margin: 14px 0 0;
+    margin-top: 20px;
+    
+}
+
+.footer-text2{
+    font-family: $main-font;
+    font-size: $fs14;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-color-secundary;
+   
+}
+
+.footer__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px) { 
+        align-items: flex-start;
+    }
+
+}
+
+
+.footer__adress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) { 
+        align-items: flex-start;
+    }
+}
+
+
+.form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+
+    &__btn{
+        height: 50px;
+        width: 200px;
+        background-color:$brand-color;
+        color:$color-white;
+        border-radius: 4px;
+        padding: 0;
+        margin:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    @media screen and (min-width: 1200px) { 
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+.form-title{
+    font-family: $main-font;
+    font-size: $fs14;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $color-white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+    @media screen and (min-width: 1200px) { 
+       text-align: left;
+    }
 }

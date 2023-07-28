@@ -17,38 +17,68 @@
     
   <header class="border-header">
     <div class="container header">
-      <a href="./index.html" class="header__logo header__nav menu-marg-padd">WebStudio</a>
+      <a href="index.html" class="header__logo header__item menu-marg-padd">WebStudio</a>
+      <div class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="hamburger-menu" width="24" height="24" fill="currentColor" viewBox="0 0 20 20">
+          <use href="./images/icons.svg#hamburger-menu"></use>
+        </svg>
+      </div>
       <nav>
         <ul class="nav">
           <li><a href="./index.html" class="nav__link">Studio</a></li>
-          <li><a href="./portafolio.html" class="nav__link here-port" >Portafolio</a></li>
+          <li><a href="./portafolio.html" class="nav__link here-port"  >Portafolio</a></li>
           <li><a href="/contacto" class="nav__link">Contacto</a></li>
         </ul>
       </nav>
-      <ul class="nav"> 
-        <li class="nav__contact">
-            <svg class="nav__contact--mail-ubication" width="16px" height="12px">
-              <use href="./images/icons.svg#mail">
-              </use>
-            </svg>  
-            <a href="mailto:info@example.com" class="nav__contact--text margin-text">info@example.com</a>
+
+      <ul class="nav-contacts"> 
+        <li class="nav-contacts__item">
+          <svg class="nav-contacts__item--mail-ubication" width="16px" height="12px">
+            <use href="./images/icons.svg#mail">
+            </use>
+          </svg>  
+          <a href="mailto:info@example.com" class="nav-contacts__item--text margin-text">info@example.com</a>
         </li>
-        <li class="nav__contact">
-            <svg class="navr__contact--phone-ubication" width="10" height="16">
-              <use href="./images/icons.svg#phone">
-              </use>
-            </svg>  
-            <a href="tel:+52 55 5529 6000" class="nav__contact--text">+52 55 5529 6000</a>
+        <li class="nav-contacts__item">
+          <svg class="nav-contacts__item--phone-ubication" width="10" height="16">
+            <use href="./images/icons.svg#phone">
+            </use>
+          </svg>  
+          <a href="tel:+52 55 5529 6000" class="nav-contacts__item--text">+52 55 5529 6000</a>
         </li>
       </ul>
     </div>
   </header>
+  
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div>
+      <svg class="svg-menu-close js-close-menu" width="20" height="20" viewBox="-1 1 20 15">
+        <use href="./images/icons.svg#cerrar"></use>
+      </svg>
+    </div>
+
+    <ul class="mobile-menu">
+      <li><a href="/index.html" class="link-menu">Estudio</a></li>
+      <li><a href="/portafolio.html" class="link-menu padd-adjust">Portafolio</a></li>
+      <li><a href="" class="link-menu padd-adjust">Contactos</a></li>
+    </ul>
+    <ul class="mobile-contacts">
+      <li><a href="" class="link-phone">+38 096 111 11 11</a></li>
+      <li><a href="" class="link-mail">info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-social">
+      <li><a href="" class="link-social division">Instagram</a></li>
+      <li><a href="" class="link-social division">Twitter</a></li>
+      <li><a href="" class="link-social division">Facebook</a></li>
+      <li><a href="" class="link-social">LinkedIn</a></li>
+    </ul>
+  </div>
 
 
       <main>
         <section class="section">
-          <div class="container">
-
+          <div class="main-container">
+            
             <ul class="buttons">
               <li><button type="button" class="buttons__item focus cursor-pointer">Todo</button></li>
               <li><button type="button" class="buttons__item focus cursor-pointer">Sitios-web</button></li>
@@ -56,12 +86,12 @@
               <li><button type="button" class="buttons__item focus cursor-pointer">Diseño</button></li>
               <li><button type="button" class="buttons__item focus cursor-pointer">Marketing</button></li>
             </ul>
-  
+          
             <ul class="cards">
               <li class="cards__item">
-                <a href="" class="cards__img">
+                <a href="" class="cards__link">
                    <p class="cards__overlay overlay-text">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma para el espionaje digital y los ataques a los servidores seguros de la competencia.</p>
-                   <img src="./images/imagenTdos1.jpg" alt="imagen de nuestras personas hacen la diferencia" width="370px" height="294px"/>
+                   <img class="cards__img" src="./images/imagenTdos1.jpg" alt="imagen de nuestras personas hacen la diferencia"/>
                 </a>
                  
                 <a href="" class="cards__information">
@@ -70,9 +100,9 @@
                 </a>
               </li>
               <li class="cards__item">
-                <a href="" class="cards__img">
+                <a href="" class="cards__link">
                     <p class="cards__overlay overlay-text">asdasdas</p>
-                    <img src="./images/imagenTdos2.jpg" alt="poster de nueva orleans vs estrella dorada" width="370px" height="294px"  />
+                    <img class="cards__img" src="./images/imagenTdos2.jpg" alt="poster de nueva orleans vs estrella dorada"  />
                 </a>
                 <a href="" class="cards__information"> 
                     <p class="cards__title"> poster de nueva orleans vs estrella dorada</p> 
@@ -80,9 +110,9 @@
                 </a>
               </li>
               <li class="cards__item">
-                  <a href="" class="cards__img">
+                  <a href="" class="cards__link">
                     <p class="cards__overlay overlay-text">asdasdas</p>
-                    <img src="./images/imagenTdos3.jpg" alt="rest comida de mar" width="370px" height="294px" />
+                    <img class="cards__img" src="./images/imagenTdos3.jpg" alt="rest comida de mar"  />
                   </a>
                   <a href="" class="cards__information">
                     
@@ -91,9 +121,9 @@
                   </a>
               </li>
               <li class="cards__item">
-                  <a href="" class="cards__img">
+                  <a href="" class="cards__link">
                     <p class="cards__overlay overlay-text">asdasdas</p>
-                    <img src="./images/imagenTdos4.jpg" alt="imagen de audifonos" width="370px" height="294px" />
+                    <img class="cards__img" src="./images/imagenTdos4.jpg" alt="imagen de audifonos" />
                   </a>
                   <a href="" class="cards__information">
                     <p class="cards__title">Proyecto prime</p> 
@@ -101,9 +131,9 @@
                   </a>
               </li>
               <li class="cards__item">
-                <a href="" class="cards__img">
+                <a href="" class="cards__link">
                 <p class="cards__overlay overlay-text">asdasdas</p>
-                <img src="./images/imagenTdos5.jpg" alt="imagan de cajas" width="370px" height="294px" />
+                <img class="cards__img" src="./images/imagenTdos5.jpg" alt="imagan de cajas" />
                 </a>
                   <a href="" class="cards__information">
                     
@@ -112,9 +142,9 @@
                 </a>
               </li>
               <li class="cards__item">
-                <a href="" class="cards__img">
+                <a href="" class="cards__link">
                 <p class="cards__overlay overlay-text">asdasdas</p>
-                <img src="./images/imagenTdos6.jpg" alt=" pc con mapa" width="370px" height="294px" />
+                <img class="cards__img" src="./images/imagenTdos6.jpg" alt=" pc con mapa"  />
                 </a>
                   <a href="" class="cards__information">
                     
@@ -123,9 +153,9 @@
                 </a>
               </li>
               <li class="cards__item">
-                <a href="" class="cards__img">
+                <a href="" class="cards__link">
                 <p class="cards__overlay overlay-text">asdasdas</p>
-                <img src="./images/imagenTdos7.jpg" alt="libro de limite edition" width="370px" height="294px" />
+                <img class="cards__img" src="./images/imagenTdos7.jpg" alt="libro de limite edition"  />
                 </a>
                   <a href="" class="cards__information">
                     
@@ -134,9 +164,9 @@
                 </a>
               </li>
               <li class="cards__item">
-                <a href="" class="cards__img">
+                <a href="" class="cards__link">
                 <p class="cards__overlay overlay-text">asdasdas</p>
-                <img src="./images/imagenTdos8.jpg" alt="tag de LAB "width="370px" height="294px" />
+                <img class="cards__img" src="./images/imagenTdos8.jpg" alt="tag de LAB" />
                 </a>
                   <a href="" class="cards__information">
                     
@@ -145,9 +175,9 @@
                 </a>
               </li>
               <li class="cards__item">
-                <a href="" class="cards__img">
+                <a href="" class="cards__link">
                 <p class="cards__overlay overlay-text">asdasdas</p>
-                <img src="./images/imagenTdos9.jpg" alt="Computador" width="370px" height="294px" />
+                <img class="cards__img" src="./images/imagenTdos9.jpg" alt="Computador"  />
                 </a>
                   <a href="" class="cards__information">
                     
@@ -164,10 +194,11 @@
       </main>
       <footer class="footer-background">
         <div class="footer">
-            <div class="space">
+            <div class="footer__text">
                 <a href="index.html" class="header__logo">WebStudio</a>
-                <adress>
-                    <p class="footer-text">Calz, Ticomán 500, ciudad de <br>México, CDMX, México</p>
+                <adress class="footer__adress">
+                    <p class="footer-text">Calz, Ticomán 500, ciudad de</p>
+                    <p class="footer-text2">México, CDMX, México</p>
                     <ul class="footer__contact">
                           <li><a href="mailto:info@example.com" class="footer__contact-text">info@example.com</a></li>
                           <li><a href="tel:+52 55 5529 6000" class="footer__contact-text">+52 55 5529 6000</a></li>
@@ -216,26 +247,32 @@
                     </ul>
                 </li>
     
-                    <form>
-                        <p class="form-title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
-                        <div class="form">
-                            <label>
-                            <input class="input-size" type="email" name="email" placeholder="Correo Electronico" />
-                            </label>
-                            <button class="form__btn" type="submit">Suscríbase
-                              <svg width="24" height="24" viewBox="0 0 24 24">
-                                <use href="./images/icons.svg#send">
-                                </use>
-                              </svg>
-                            </button>
-                        </div>
-                    </form>
+                    
                </ul>
             </div>
-              
+            
     
           </div>
+          <form>
+            <p class="form-title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</p>
+            <div class="form">
+                <label>
+                <input class="input-size" type="email" name="email" placeholder="Correo Electronico" />
+                </label>
+                <button class="form__btn" type="submit">Suscríbase
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use href="./images/icons.svg#send">
+                    </use>
+                  </svg>
+                </button>
+            </div>
+        </form>  
       </footer>
-    
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous">
+  </script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

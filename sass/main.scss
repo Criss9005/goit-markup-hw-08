@@ -5,6 +5,7 @@
 @import "../Base/commons.scss";
 //layout
 @import "../layout/header.scss";
+@import "../layout/menu.scss";
 @import "../layout/hero.scss";
 
 @import "../layout/footer.scss";
@@ -18,18 +19,41 @@ a{text-decoration: none;}
 h2{text-align: center;}
 body{font-family: $main-font; color: $dominat-color;}
 .margin-text{margin-right: 50px;}
-.space{margin-right: 60px;}
-.background-gray{background-color: $background-color;}
+//.space{margin-right: 60px;}
+
+.background-gray{
+    background-color: $background-color;
+    margin-top:94px;
+    max-width: 480px;
+
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width:1200px) {
+        max-width: 100%;
+    }
+    
+    
+}
 .section-padding{padding-top: 94px;}
 .cursor-pointer{ cursor:pointer;}
 
 .caracteristics{
     display: flex;
-    margin: 10px;
+    flex-direction: column;
     height: auto;
-    text-align:left;
-    padding-left: 0%;
+    width: 450px;
     gap: 30px;
+
+    @media screen and (min-width: 768px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 738px;
+    }
+    @media screen and (min-width: 1200px){
+        gap: 30px;
+        flex-wrap: nowrap;
+    }
 
     &__item{
         display: flex;
@@ -57,8 +81,16 @@ body{font-family: $main-font; color: $dominat-color;}
     &__icon{
         background: $icon-background-color;
             border-radius: 4px;
-            width: 270px;
+            width: 450px;
             height: 120px;
+
+            @media screen and (min-width: 768px){
+            width: 354px;
+            }
+
+            @media screen and (min-width: 1200px){
+                width: 270px;
+            }
     }
 }
 
@@ -70,6 +102,8 @@ body{font-family: $main-font; color: $dominat-color;}
     line-height: 42px;
     letter-spacing: 0.03em;
     padding-bottom: 50px;
+    margin-top: 94px ;
+
 }
   
 .img-container{
@@ -84,6 +118,16 @@ body{font-family: $main-font; color: $dominat-color;}
     padding: 0px;
     gap: 30px;
     margin: 0px;
+    flex-direction: column;
+    align-items: center;
+    
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+        
 
     &__information{
         padding: 30px 44px;
@@ -93,6 +137,7 @@ body{font-family: $main-font; color: $dominat-color;}
         background: $text-color-secundary;
         box-shadow: 0px 1px 3px $cards-shadow-color, 0px 1px 1px $shadow-black, 0px 2px 1px $border-black;
         border-radius: 0px 0px 4px 4px;
+        
     }
 
     &__title{
@@ -104,6 +149,8 @@ body{font-family: $main-font; color: $dominat-color;}
         letter-spacing: 0.03em;
         color:$dominat-color;
         margin: 0 0 10px 0;
+       
+
     }
     
     &__description{
@@ -119,11 +166,15 @@ body{font-family: $main-font; color: $dominat-color;}
 
 .cards{
     display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+    flex-direction:column;
+    gap: 30px;
 
+    @media screen and (min-width: 768px) { 
+        flex-direction: row;
+        flex-wrap: wrap;
+                              
+    }
+    
     &__overlay {
         position: absolute;
         width: 100%;
@@ -136,7 +187,21 @@ body{font-family: $main-font; color: $dominat-color;}
 
     &__item{
         border: 1px solid $cards-color;
-        flex-basis: calc((100% - 54px) / 3); 
+        //width: 450px;
+        //flex-basis: calc((100% - 54px) / 3); 
+        flex-wrap: wrap;
+
+        @media screen and (min-width: 768px) { 
+            flex-basis: calc((100% - 30px) / 2);
+                 
+        }
+        @media screen and (min-width: 1200px) { 
+            flex-basis: calc((100% - 60px) / 3);
+            
+            width: 370px;
+            
+        }
+
         &:hover{
             box-shadow: 0px 1px 1px $cards-shadow-color, 0px 4px 4px $cards-shadow-color-variation, 1px 4px 6px $shadow-black;
             & .cards__overlay{
@@ -146,9 +211,13 @@ body{font-family: $main-font; color: $dominat-color;}
         &:focus{
             box-shadow: 0px 1px 1px $cards-shadow-color, 0px 4px 4px $cards-shadow-color-variation, 1px 4px 6px $shadow-black;
         }
+
+
+               
+    
     }
 
-    &__information{
+        &__information{
         padding-top: 20px;
         color: $dominat-color;  
     }
@@ -162,6 +231,7 @@ body{font-family: $main-font; color: $dominat-color;}
         margin: 0;
         padding-left: 24px;
         padding-right: 24px;
+        padding-top: 20px;
     }
 
     &__description{
@@ -175,17 +245,29 @@ body{font-family: $main-font; color: $dominat-color;}
     }
 
 
-    &__img{
+    &__link{
         position: relative;
         margin: 0 auto;
         overflow: hidden;    
         display: flex;
     }
     
-  
+     
 }
 
+.cards__img{
+    width:450px; 
+    height: 294px;
 
+    @media screen and (min-width: 768px) { 
+        width:354px; 
+        
+    }
+    @media screen and (min-width: 1200px) { 
+        width:370px; 
+        
+    }
+}
 
 .overlay-text{
     font-family: $main-font;
@@ -200,9 +282,7 @@ body{font-family: $main-font; color: $dominat-color;}
 
 .buttons{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
     margin-top: 0;
     margin-bottom: 50px;
     padding-left: 0;
@@ -213,6 +293,10 @@ body{font-family: $main-font; color: $dominat-color;}
     border: 0;
     padding: 6px 24px;
     } 
+@media screen  and (min-width:768px){
+    justify-content: center;
+    }
+
 }
 
 
@@ -272,11 +356,20 @@ line-height: 1.16;
 letter-spacing: 0.03em;
 color:$dominat-color;
 margin-bottom: 50px;
+width: 450px;
+
+@media screen and (min-width:768px) {
+    width: 768px;
+}
+@media screen and (min-width:1200px) {
+    width: 100%;
+}
 }
 
 .team__social-media{
     display: flex;
     padding-top: 16px;
+    justify-content: center;
 
     &--icon{
         fill: $icons-color;
@@ -292,14 +385,19 @@ margin-bottom: 50px;
 
 .regular-clients{
     display: flex;
-    justify-content: space-between;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    
     &__icons{
         border: 1px solid $icons-color;
         border-radius: 4px;
         background-color: $icon-background-color;
-        width: 170px;
-        height: 81px;
+        width: 182px;
+        height: 92px;
+
+        
         &:hover{
             border: 1px solid $brand-color;
             fill: $brand-color;
@@ -315,16 +413,41 @@ margin-bottom: 50px;
                 stroke: $brand-color;
             }
         }
+
+        @media screen and (min-width:768px) {
+            width: 226px;
+            gap: 30px;
+        }
+        @media screen and (min-width:1200px) {
+            width: 170px;
+            
+        }
     }
 }
 
 
 .background-black{
     background-color: $background-index ;
-    background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo.jpg');
+    background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width:768px){
+        background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-tablet.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media screen and (min-width:1200px){
+        background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-desktop.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    
 }
 
 %img-tool{
@@ -369,11 +492,11 @@ margin-top:254px;
     border-bottom: 1px solid $border-button;
 }
 
-.header__contact:hover .header__contact--mail-ubication, .header__contact:hover .header__contact--phone-ubication, .header__contact:focus .header__contact--phone-ubication, .header__contact:focus .header__contact--mail-ubication {
+.nav-contacts__item:hover .nav-contacts__item--mail-ubication, .nav-contacts__item:hover .nav-contacts__item--phone-ubication, .nav-contacts__item:focus .nav-contacts__item--phone-ubication, .nav-contacts__item:focus .nav-contacts__item--mail-ubication {
     stroke: $brand-color;
 }
 
-.header__contact:hover .header__contact--text, .header__contact:focus .header__contact--text{
+.nav-contacts__item:hover .nav-contacts__item--text, .nav-contacts__item:focus .nav-contacts__item--text{
     color:$brand-color;
 }
 
@@ -403,23 +526,43 @@ margin-top:254px;
 }
 
 .modal__box{
-    width: 528px ;
-    height: 581px ;
+    width: 450px ;
+    height: 609px ;
     background-color: $color-white;
     display: flex;
     flex-direction: column;
-    margin-top: 35px;
+    margin: 93px 15px 94px;
+
+    @media screen and (min-width:768px) {
+        margin: auto;
+        padding: auto;
+        margin-top: 208px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-top: 221px;
+        width: 528px ;
+        height: 581px ;
+    }
+
 }
 
 .svg-close{
+    margin-top: 8px;
+    margin-right: 8px;
     border: 1px solid $icons-color;
     border-radius: 50%;
-    margin-top:5px;
-    margin-right: 5px;
+       
     &:hover{
         fill: $brand-color;
         cursor: pointer;
     }
+}
+
+.modal-form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 40px 40px 40px;
 }
 
 .form-space{
@@ -434,40 +577,7 @@ margin-top:254px;
     padding: 10px;
 }
   
-
-
-.form-title{
-    font-family: $main-font;
-    font-size: $fs14;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: $color-white;
-    padding-bottom: 10px;
-    padding-top: 5px;
-}
-  
-.form{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    &__btn{
-        height: 50px;
-        width: 200px;
-        background-color:$brand-color;
-        color:$color-white;
-        border-radius: 4px;
-        padding: 0;
-        margin:0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-    }
-}
-    
+   
 .form-btn:hover{
     cursor: pointer;
 }
@@ -489,7 +599,7 @@ margin-top:254px;
     }
 
     &__input{
-        width: 448px;
+        width: 370px;
         height: 40px;
         border-radius: 4px;
         border: 1px solid $border-black;
@@ -510,17 +620,27 @@ margin-top:254px;
             border: 1px solid $brand-color;
             outline: none;
         }
-
+        
+        @media screen and (min-width:1200px) {
+            width: 448px ;
+            
+        }
+    
 
     }
     
     &__textarea{
-        width: 448px;
+        width: 370px;
         height: 120px;
         padding: 16px 12px;
         border-radius: 4px;
         border: 1px solid $border-black;
         display: block;
+
+        @media screen and (min-width:1200px) {
+            width: 448px ;
+            
+        }
     }
     
     &__checkbox-btn{
@@ -550,8 +670,7 @@ margin-top:254px;
     }
 
     &__checkbox{
-        padding-left: 76px;
-        padding-right: 51px;
+        padding-left: 24px;
         margin-top: 10px;
         padding-top: 10px;
         position: relative;
@@ -629,5 +748,25 @@ label{
         position: absolute;
         left: -20px;
         top: 10px;
+    }
+}
+
+.dedicate-section-hidden{
+    display: none;
+
+    @media screen and (min-width: 1200px){
+        display: contents;
+    }
+}
+
+.main-container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px){
+        width: 1200px;
     }
 }
