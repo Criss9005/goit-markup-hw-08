@@ -761,17 +761,6 @@ body {
 .background-gray {
   background-color: #E5E5E5;
   margin-top: 94px;
-  max-width: 480px;
-}
-@media screen and (min-width: 768px) {
-  .background-gray {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .background-gray {
-    max-width: 100%;
-  }
 }
 
 .section-padding {
@@ -1072,17 +1061,6 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
-  width: 450px;
-}
-@media screen and (min-width: 768px) {
-  .team-section-title {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team-section-title {
-    width: 100%;
-  }
 }
 
 .team__social-media {
@@ -1147,6 +1125,11 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .background-black {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../images/Imagen-fondo-mobile2x.jpg");
+  }
+}
 @media screen and (min-width: 768px) {
   .background-black {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../images/Imagen-fondo-tablet.jpg");
@@ -1155,12 +1138,22 @@ body {
     background-size: cover;
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .background-black {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../images/Imagen-fondo-tablet2x.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
   .background-black {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../images/Imagen-fondo-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .background-black {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../images/Imagen-fondo-desktop2x.jpg");
   }
 }
 

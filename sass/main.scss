@@ -19,22 +19,12 @@ a{text-decoration: none;}
 h2{text-align: center;}
 body{font-family: $main-font; color: $dominat-color;}
 .margin-text{margin-right: 50px;}
-//.space{margin-right: 60px;}
+
 
 .background-gray{
     background-color: $background-color;
     margin-top:94px;
-    max-width: 480px;
-
-    @media screen and (min-width:768px) {
-        max-width: 768px;
     }
-    @media screen and (min-width:1200px) {
-        max-width: 100%;
-    }
-    
-    
-}
 .section-padding{padding-top: 94px;}
 .cursor-pointer{ cursor:pointer;}
 
@@ -187,8 +177,6 @@ body{font-family: $main-font; color: $dominat-color;}
 
     &__item{
         border: 1px solid $cards-color;
-        //width: 450px;
-        //flex-basis: calc((100% - 54px) / 3); 
         flex-wrap: wrap;
 
         @media screen and (min-width: 768px) { 
@@ -356,14 +344,7 @@ line-height: 1.16;
 letter-spacing: 0.03em;
 color:$dominat-color;
 margin-bottom: 50px;
-width: 450px;
 
-@media screen and (min-width:768px) {
-    width: 768px;
-}
-@media screen and (min-width:1200px) {
-    width: 100%;
-}
 }
 
 .team__social-media{
@@ -433,11 +414,23 @@ width: 450px;
     background-position: center;
     background-size: cover;
 
+    @media screen and (min-device-pixel-ratio: 2), 
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx){
+                background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-mobile2x.jpg');
+    }
+
     @media screen and (min-width:768px){
         background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-tablet.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
+        @media screen and (min-device-pixel-ratio: 2), 
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx){
+            background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-tablet2x.jpg');
+}
     }
 
     @media screen and (min-width:1200px){
@@ -445,6 +438,12 @@ width: 450px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
+        @media screen and (min-device-pixel-ratio: 2), 
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx){
+            background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-desktop2x.jpg');
+}
     }
 
     
@@ -770,3 +769,4 @@ label{
         width: 1200px;
     }
 }
+
