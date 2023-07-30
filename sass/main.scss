@@ -409,7 +409,7 @@ margin-bottom: 50px;
 
 .background-black{
     background-color: $background-index ;
-    background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-mobile.jpg');
+    background: linear-gradient($linear-black, $black-opacity-07), url('../images/imagen-fondo-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -417,11 +417,11 @@ margin-bottom: 50px;
     @media screen and (min-device-pixel-ratio: 2), 
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx){
-                background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-mobile2x.jpg');
+                background: linear-gradient($linear-black, $black-opacity-07), url('../images/imagen-fondo-mobile2x.jpg');
     }
 
     @media screen and (min-width:768px){
-        background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-tablet.jpg');
+        background: linear-gradient($linear-black, $black-opacity-07), url('../images/imagen-fondo-tablet.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -429,12 +429,12 @@ margin-bottom: 50px;
         @media screen and (min-device-pixel-ratio: 2), 
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx){
-            background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-tablet2x.jpg');
+            background: linear-gradient($linear-black, $black-opacity-07), url('../images/imagen-fondo-tablet2x.jpg');
 }
     }
 
     @media screen and (min-width:1200px){
-        background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-desktop.jpg');
+        background: linear-gradient($linear-black, $black-opacity-07), url('../images/imagen-fondo-desktop.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -442,7 +442,7 @@ margin-bottom: 50px;
         @media screen and (min-device-pixel-ratio: 2), 
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx){
-            background: linear-gradient($linear-black, $black-opacity-07), url('../images/Imagen-fondo-desktop2x.jpg');
+            background: linear-gradient($linear-black, $black-opacity-07), url('../images/imagen-fondo-desktop2x.jpg');
 }
     }
 
