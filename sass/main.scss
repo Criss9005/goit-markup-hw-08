@@ -434,7 +434,7 @@ margin-bottom: 50px;
     }
 
     @media screen and (min-width:1200px){
-        background: linear-gradient($linear-black, $black-opacity-07), url('../images/imagen-fondo-desktop.jpg');
+        background: linear-gradient($linear-black, $black-opacity-07), url('../images/fondo-desktop.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -442,7 +442,7 @@ margin-bottom: 50px;
         @media screen and (min-device-pixel-ratio: 2), 
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx){
-            background: linear-gradient($linear-black, $black-opacity-07), url('../images/imagen-fondo-desktop2x.jpg');
+            background: linear-gradient($linear-black, $black-opacity-07), url('../images/fondo-desktop2x.jpg');
 }
     }
 

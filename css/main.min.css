@@ -294,7 +294,7 @@ header {
 }
 
 .nav-contacts {
-  margin-left: 93px;
+  margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
   .nav-contacts {
@@ -1145,7 +1145,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .background-black {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../images/imagen-fondo-desktop.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url("../images/fondo-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
